@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Iwosan - Rehabilitación Física</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8fdfb;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #4db6ac, #00796b);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #004d40;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #00796b;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      color: #00796b;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      position: relative;
+    }
+    section h2::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #4db6ac;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+    .intro p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    /* Servicios */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .service-card {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+    .service-card i {
+      font-size: 3rem;
+      color: #4db6ac;
+      margin-bottom: 15px;
+    }
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+    .service-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Galería */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Contacto */
+    .contact-info {
+      text-align: center;
+      background: #e0f2f1;
+      padding: 40px 20px;
+      border-radius: 15px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1.05rem;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #128c7e;
+    }
+
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive */
+    @media(max-width:600px){
+      header h1 { font-size: 2rem; }
+      section { padding: 40px 15px; }
+      .service-card { padding: 20px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Clínica de Rehabilitación Física Iwosan</h1>
+    <p>“Te acompañamos en tu Rehabilitación”</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio" class="intro">
+    <h2>Bienvenidos</h2>
+    <p>
+      En la Clínica Iwosan nos enfocamos en restaurar tu movilidad, aliviar el dolor y mejorar tu calidad de vida.
+      Nuestro equipo de profesionales utiliza técnicas modernas y personalizadas para cada paciente.
+    </p>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p><b>Misión:</b> Restaurar y mejorar la función motora y el bienestar de nuestros pacientes, utilizando enfoques personalizados y vanguardistas, aliviando el dolor y previniendo futuros problemas.</p>
+    <p><b>Visión:</b> Ser la clínica de referencia en rehabilitación física, destacándonos por innovación, calidad y compromiso con la salud integral de nuestros pacientes.</p>
+    <p><b>Valores:</b> Profesionalismo, empatía, compromiso, innovación y respeto.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+      <div class="service-card">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Rehabilitación Deportiva</h3>
+        <p>Recupera tu fuerza y movilidad con programas personalizados.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-hand-holding-medical"></i>
+        <h3>Fisioterapia</h3>
+        <p>Tratamientos para aliviar dolor y mejorar la función motora.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-spa"></i>
+        <h3>Masajes Relajantes</h3>
+        <p>Alivio de estrés y tensión muscular para tu bienestar.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-bolt"></i>
+        <h3>Electroterapia</h3>
+        <p>Estimulación muscular y alivio del dolor mediante tecnología.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-snowflake"></i>
+        <h3>Crioterapia</h3>
+        <p>Terapia con frío para reducir inflamación y dolor.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-fire-alt"></i>
+        <h3>Termoterapia</h3>
+        <p>Uso del calor para aliviar molestias musculares.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-water"></i>
+        <h3>Hidroterapia</h3>
+        <p>Ejercicios y terapias dentro del agua para mejorar movilidad.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-spa"></i>
+        <h3>Masajes Descontracturantes</h3>
+        <p>Eliminamos tensiones y contracturas para tu confort.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?physiotherapy" alt="Fisioterapia">
+      <img src="https://source.unsplash.com/400x300/?rehabilitation" alt="Rehabilitación">
+      <img src="https://source.unsplash.com/400x300/?massage" alt="Masaje">
+      <img src="https://source.unsplash.com/400x300/?therapy" alt="Terapia">
+      <img src="https://source.unsplash.com/400x300/?fitness" alt="Deportes">
+      <img src="https://source.unsplash.com/400x300/?wellness" alt="Bienestar">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+      <p><b>Fisioterapeuta:</b> Roberto Delgado</p>
+      <p><b>Email:</b> clinicaderehabilitacioniwosan@gmail.com</p>
+      <p><b>WhatsApp:</b> 55 5650 2060</p>
+      <p><b>Facebook:</b> Clínica de Rehabilitación Física Iwosan</p>
+      <p>Conócenos hoy y da el primer paso. Ponte en contacto y agenda tu cita.</p>
+
+      <a class="whatsapp-btn" href="https://wa.me/525556502060" target="_blank">
+        💬 Escríbenos por WhatsApp
+      </a>
+
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.742517015417!2d-99.17555078468078!3d19.409305986910486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201a3f1234567%3A0xabcdef1234567890!2sCl%C3%ADnica%20Iwosan!5e0!3m2!1ses!2smx!4v1690000000000!5m2!1ses!2smx" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Clínica Iwosan - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
